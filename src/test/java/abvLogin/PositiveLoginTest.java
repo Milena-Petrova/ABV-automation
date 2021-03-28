@@ -27,7 +27,7 @@ public class PositiveLoginTest {
         Browser.goToUrl("https://www.abv.bg/");
         Frames.passGDPRFrame();
         WaitUntil.waitPageTitle("АБВ Поща");
-        AbvLoginPage.positiveLogin("milipt","mynameismilena!");
+        AbvLoginPage.positiveLogin("milipt","***************");
         WaitUntil.waitPageTitle("АБВ поща");
         Verifications.verificationTitle("непрочетени) - АБВ поща","Unsuccessful login..");
         AbvMailBoxPage.logOut();
